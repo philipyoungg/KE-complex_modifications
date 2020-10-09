@@ -89,6 +89,11 @@ def generate_ergoemacs_mode(trigger_key)
                                       ],
                                       trigger_key, variable),
     generate_ergoemacs_two_part_rule("d", "delete_or_backspace", [], trigger_key, variable),
+    generate_ergoemacs_two_part_rule("b", "space", [], trigger_key, variable),
+    generate_ergoemacs_two_part_rule("f", "return_or_enter", [], trigger_key,
+    variable),
+    generate_ergoemacs_two_part_rule("s", "tab", [], trigger_key,
+    variable),
     generate_ergoemacs_two_part_rule("f", "delete_forward", [], trigger_key, variable),
     generate_ergoemacs_four_part_rule("e", "delete_or_backspace", ["left_option"],
                                       [
